@@ -29,9 +29,25 @@ public class SCalender extends javax.swing.JFrame {
     private void initComponents() {
 
         scLeftPane = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        btnJanuary = new javax.swing.JButton();
+        btnFebruary = new javax.swing.JButton();
+        btnMarch = new javax.swing.JButton();
+        btnApril = new javax.swing.JButton();
+        btnMay = new javax.swing.JButton();
+        btnJune = new javax.swing.JButton();
+        btnJuly = new javax.swing.JButton();
+        btnAugust = new javax.swing.JButton();
+        btnSeptember = new javax.swing.JButton();
+        btnOctober = new javax.swing.JButton();
+        btnNovember = new javax.swing.JButton();
+        btnDecember = new javax.swing.JButton();
+        lblSelectYear = new javax.swing.JLabel();
+        cmbYear = new javax.swing.JComboBox();
         scMainPane = new javax.swing.JPanel();
         scCalenderPane = new javax.swing.JPanel();
         sCalenderCellOne = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         sCalenderCellTwo = new javax.swing.JPanel();
         sCalenderCellThree = new javax.swing.JPanel();
         sCalenderCellFour = new javax.swing.JPanel();
@@ -76,15 +92,96 @@ public class SCalender extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setLayout(new java.awt.GridLayout(4, 3));
+
+        btnJanuary.setText("January");
+        btnJanuary.setFocusPainted(false);
+        btnJanuary.setFocusable(false);
+        jPanel1.add(btnJanuary);
+
+        btnFebruary.setText("February");
+        btnFebruary.setFocusPainted(false);
+        btnFebruary.setFocusable(false);
+        jPanel1.add(btnFebruary);
+
+        btnMarch.setText("March");
+        btnMarch.setFocusPainted(false);
+        btnMarch.setFocusable(false);
+        jPanel1.add(btnMarch);
+
+        btnApril.setText("April");
+        btnApril.setFocusPainted(false);
+        btnApril.setFocusable(false);
+        jPanel1.add(btnApril);
+
+        btnMay.setText("May");
+        btnMay.setFocusPainted(false);
+        btnMay.setFocusable(false);
+        jPanel1.add(btnMay);
+
+        btnJune.setText("June");
+        btnJune.setFocusPainted(false);
+        btnJune.setFocusable(false);
+        jPanel1.add(btnJune);
+
+        btnJuly.setText("July");
+        btnJuly.setFocusPainted(false);
+        btnJuly.setFocusable(false);
+        jPanel1.add(btnJuly);
+
+        btnAugust.setText("August");
+        btnAugust.setFocusPainted(false);
+        btnAugust.setFocusable(false);
+        jPanel1.add(btnAugust);
+
+        btnSeptember.setText("September");
+        btnSeptember.setFocusPainted(false);
+        btnSeptember.setFocusable(false);
+        jPanel1.add(btnSeptember);
+
+        btnOctober.setText("October");
+        btnOctober.setFocusPainted(false);
+        btnOctober.setFocusable(false);
+        jPanel1.add(btnOctober);
+
+        btnNovember.setText("November");
+        btnNovember.setFocusPainted(false);
+        btnNovember.setFocusable(false);
+        jPanel1.add(btnNovember);
+
+        btnDecember.setText("December");
+        btnDecember.setFocusPainted(false);
+        btnDecember.setFocusable(false);
+        jPanel1.add(btnDecember);
+
+        lblSelectYear.setText("Select Year:");
+
+        cmbYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout scLeftPaneLayout = new javax.swing.GroupLayout(scLeftPane);
         scLeftPane.setLayout(scLeftPaneLayout);
         scLeftPaneLayout.setHorizontalGroup(
             scLeftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(scLeftPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(scLeftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(scLeftPaneLayout.createSequentialGroup()
+                        .addComponent(lblSelectYear)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cmbYear, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         scLeftPaneLayout.setVerticalGroup(
             scLeftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 732, Short.MAX_VALUE)
+            .addGroup(scLeftPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(scLeftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSelectYear)
+                    .addComponent(cmbYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(338, Short.MAX_VALUE))
         );
 
         getContentPane().add(scLeftPane, java.awt.BorderLayout.LINE_START);
@@ -94,633 +191,175 @@ public class SCalender extends javax.swing.JFrame {
         scCalenderPane.setLayout(new java.awt.GridLayout(6, 7));
 
         sCalenderCellOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        sCalenderCellOne.setLayout(new java.awt.GridLayout(0, 1));
 
-        javax.swing.GroupLayout sCalenderCellOneLayout = new javax.swing.GroupLayout(sCalenderCellOne);
-        sCalenderCellOne.setLayout(sCalenderCellOneLayout);
-        sCalenderCellOneLayout.setHorizontalGroup(
-            sCalenderCellOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellOneLayout.setVerticalGroup(
-            sCalenderCellOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
+        jLabel1.setText("1");
+        sCalenderCellOne.add(jLabel1);
 
         scCalenderPane.add(sCalenderCellOne);
 
         sCalenderCellTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwoLayout = new javax.swing.GroupLayout(sCalenderCellTwo);
-        sCalenderCellTwo.setLayout(sCalenderCellTwoLayout);
-        sCalenderCellTwoLayout.setHorizontalGroup(
-            sCalenderCellTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwoLayout.setVerticalGroup(
-            sCalenderCellTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwo.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwo);
 
         sCalenderCellThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThreeLayout = new javax.swing.GroupLayout(sCalenderCellThree);
-        sCalenderCellThree.setLayout(sCalenderCellThreeLayout);
-        sCalenderCellThreeLayout.setHorizontalGroup(
-            sCalenderCellThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThreeLayout.setVerticalGroup(
-            sCalenderCellThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThree.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThree);
 
         sCalenderCellFour.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFourLayout = new javax.swing.GroupLayout(sCalenderCellFour);
-        sCalenderCellFour.setLayout(sCalenderCellFourLayout);
-        sCalenderCellFourLayout.setHorizontalGroup(
-            sCalenderCellFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFourLayout.setVerticalGroup(
-            sCalenderCellFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFour.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFour);
 
         sCalenderCellFive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFiveLayout = new javax.swing.GroupLayout(sCalenderCellFive);
-        sCalenderCellFive.setLayout(sCalenderCellFiveLayout);
-        sCalenderCellFiveLayout.setHorizontalGroup(
-            sCalenderCellFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFiveLayout.setVerticalGroup(
-            sCalenderCellFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFive.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFive);
 
         sCalenderCellSix.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellSixLayout = new javax.swing.GroupLayout(sCalenderCellSix);
-        sCalenderCellSix.setLayout(sCalenderCellSixLayout);
-        sCalenderCellSixLayout.setHorizontalGroup(
-            sCalenderCellSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellSixLayout.setVerticalGroup(
-            sCalenderCellSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellSix.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellSix);
 
         sCalenderCellSeven.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellSevenLayout = new javax.swing.GroupLayout(sCalenderCellSeven);
-        sCalenderCellSeven.setLayout(sCalenderCellSevenLayout);
-        sCalenderCellSevenLayout.setHorizontalGroup(
-            sCalenderCellSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellSevenLayout.setVerticalGroup(
-            sCalenderCellSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellSeven.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellSeven);
 
         sCalenderCellEight.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellEightLayout = new javax.swing.GroupLayout(sCalenderCellEight);
-        sCalenderCellEight.setLayout(sCalenderCellEightLayout);
-        sCalenderCellEightLayout.setHorizontalGroup(
-            sCalenderCellEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellEightLayout.setVerticalGroup(
-            sCalenderCellEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellEight.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellEight);
 
         sCalenderCellNine.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellNineLayout = new javax.swing.GroupLayout(sCalenderCellNine);
-        sCalenderCellNine.setLayout(sCalenderCellNineLayout);
-        sCalenderCellNineLayout.setHorizontalGroup(
-            sCalenderCellNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellNineLayout.setVerticalGroup(
-            sCalenderCellNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellNine.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellNine);
 
         sCalenderCellTen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTenLayout = new javax.swing.GroupLayout(sCalenderCellTen);
-        sCalenderCellTen.setLayout(sCalenderCellTenLayout);
-        sCalenderCellTenLayout.setHorizontalGroup(
-            sCalenderCellTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTenLayout.setVerticalGroup(
-            sCalenderCellTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTen);
 
         sCalenderCellEleven.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellElevenLayout = new javax.swing.GroupLayout(sCalenderCellEleven);
-        sCalenderCellEleven.setLayout(sCalenderCellElevenLayout);
-        sCalenderCellElevenLayout.setHorizontalGroup(
-            sCalenderCellElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellElevenLayout.setVerticalGroup(
-            sCalenderCellElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellEleven.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellEleven);
 
         sCalenderCellTwelve.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwelveLayout = new javax.swing.GroupLayout(sCalenderCellTwelve);
-        sCalenderCellTwelve.setLayout(sCalenderCellTwelveLayout);
-        sCalenderCellTwelveLayout.setHorizontalGroup(
-            sCalenderCellTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwelveLayout.setVerticalGroup(
-            sCalenderCellTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwelve.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwelve);
 
         sCalenderCellThirteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirteenLayout = new javax.swing.GroupLayout(sCalenderCellThirteen);
-        sCalenderCellThirteen.setLayout(sCalenderCellThirteenLayout);
-        sCalenderCellThirteenLayout.setHorizontalGroup(
-            sCalenderCellThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirteenLayout.setVerticalGroup(
-            sCalenderCellThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirteen);
 
         sCalenderCellFourteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFourteenLayout = new javax.swing.GroupLayout(sCalenderCellFourteen);
-        sCalenderCellFourteen.setLayout(sCalenderCellFourteenLayout);
-        sCalenderCellFourteenLayout.setHorizontalGroup(
-            sCalenderCellFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFourteenLayout.setVerticalGroup(
-            sCalenderCellFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFourteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFourteen);
 
         sCalenderCellFifteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFifteenLayout = new javax.swing.GroupLayout(sCalenderCellFifteen);
-        sCalenderCellFifteen.setLayout(sCalenderCellFifteenLayout);
-        sCalenderCellFifteenLayout.setHorizontalGroup(
-            sCalenderCellFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFifteenLayout.setVerticalGroup(
-            sCalenderCellFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFifteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFifteen);
 
         sCalenderCellSixteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellSixteenLayout = new javax.swing.GroupLayout(sCalenderCellSixteen);
-        sCalenderCellSixteen.setLayout(sCalenderCellSixteenLayout);
-        sCalenderCellSixteenLayout.setHorizontalGroup(
-            sCalenderCellSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellSixteenLayout.setVerticalGroup(
-            sCalenderCellSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellSixteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellSixteen);
 
         sCalenderCellSeventeen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellSeventeenLayout = new javax.swing.GroupLayout(sCalenderCellSeventeen);
-        sCalenderCellSeventeen.setLayout(sCalenderCellSeventeenLayout);
-        sCalenderCellSeventeenLayout.setHorizontalGroup(
-            sCalenderCellSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellSeventeenLayout.setVerticalGroup(
-            sCalenderCellSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellSeventeen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellSeventeen);
 
         sCalenderCellEighteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellEighteenLayout = new javax.swing.GroupLayout(sCalenderCellEighteen);
-        sCalenderCellEighteen.setLayout(sCalenderCellEighteenLayout);
-        sCalenderCellEighteenLayout.setHorizontalGroup(
-            sCalenderCellEighteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellEighteenLayout.setVerticalGroup(
-            sCalenderCellEighteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellEighteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellEighteen);
 
         sCalenderCellNineteen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellNineteenLayout = new javax.swing.GroupLayout(sCalenderCellNineteen);
-        sCalenderCellNineteen.setLayout(sCalenderCellNineteenLayout);
-        sCalenderCellNineteenLayout.setHorizontalGroup(
-            sCalenderCellNineteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellNineteenLayout.setVerticalGroup(
-            sCalenderCellNineteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellNineteen.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellNineteen);
 
         sCalenderCellTwenty.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyLayout = new javax.swing.GroupLayout(sCalenderCellTwenty);
-        sCalenderCellTwenty.setLayout(sCalenderCellTwentyLayout);
-        sCalenderCellTwentyLayout.setHorizontalGroup(
-            sCalenderCellTwentyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyLayout.setVerticalGroup(
-            sCalenderCellTwentyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwenty.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwenty);
 
         sCalenderCellTwentyOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyOneLayout = new javax.swing.GroupLayout(sCalenderCellTwentyOne);
-        sCalenderCellTwentyOne.setLayout(sCalenderCellTwentyOneLayout);
-        sCalenderCellTwentyOneLayout.setHorizontalGroup(
-            sCalenderCellTwentyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyOneLayout.setVerticalGroup(
-            sCalenderCellTwentyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyOne.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyOne);
 
         sCalenderCellTwentyTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyTwoLayout = new javax.swing.GroupLayout(sCalenderCellTwentyTwo);
-        sCalenderCellTwentyTwo.setLayout(sCalenderCellTwentyTwoLayout);
-        sCalenderCellTwentyTwoLayout.setHorizontalGroup(
-            sCalenderCellTwentyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyTwoLayout.setVerticalGroup(
-            sCalenderCellTwentyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyTwo.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyTwo);
 
         sCalenderCellTwentyThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyThreeLayout = new javax.swing.GroupLayout(sCalenderCellTwentyThree);
-        sCalenderCellTwentyThree.setLayout(sCalenderCellTwentyThreeLayout);
-        sCalenderCellTwentyThreeLayout.setHorizontalGroup(
-            sCalenderCellTwentyThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyThreeLayout.setVerticalGroup(
-            sCalenderCellTwentyThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyThree.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyThree);
 
         sCalenderCellTwentyFour.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyFourLayout = new javax.swing.GroupLayout(sCalenderCellTwentyFour);
-        sCalenderCellTwentyFour.setLayout(sCalenderCellTwentyFourLayout);
-        sCalenderCellTwentyFourLayout.setHorizontalGroup(
-            sCalenderCellTwentyFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyFourLayout.setVerticalGroup(
-            sCalenderCellTwentyFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyFour.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyFour);
 
         sCalenderCellTwentyFive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyFiveLayout = new javax.swing.GroupLayout(sCalenderCellTwentyFive);
-        sCalenderCellTwentyFive.setLayout(sCalenderCellTwentyFiveLayout);
-        sCalenderCellTwentyFiveLayout.setHorizontalGroup(
-            sCalenderCellTwentyFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyFiveLayout.setVerticalGroup(
-            sCalenderCellTwentyFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyFive.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyFive);
 
         sCalenderCellTwentySix.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentySixLayout = new javax.swing.GroupLayout(sCalenderCellTwentySix);
-        sCalenderCellTwentySix.setLayout(sCalenderCellTwentySixLayout);
-        sCalenderCellTwentySixLayout.setHorizontalGroup(
-            sCalenderCellTwentySixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentySixLayout.setVerticalGroup(
-            sCalenderCellTwentySixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentySix.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentySix);
 
         sCalenderCellTwentySeven.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentySevenLayout = new javax.swing.GroupLayout(sCalenderCellTwentySeven);
-        sCalenderCellTwentySeven.setLayout(sCalenderCellTwentySevenLayout);
-        sCalenderCellTwentySevenLayout.setHorizontalGroup(
-            sCalenderCellTwentySevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentySevenLayout.setVerticalGroup(
-            sCalenderCellTwentySevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentySeven.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentySeven);
 
         sCalenderCellTwentyEight.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyEightLayout = new javax.swing.GroupLayout(sCalenderCellTwentyEight);
-        sCalenderCellTwentyEight.setLayout(sCalenderCellTwentyEightLayout);
-        sCalenderCellTwentyEightLayout.setHorizontalGroup(
-            sCalenderCellTwentyEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyEightLayout.setVerticalGroup(
-            sCalenderCellTwentyEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyEight.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyEight);
 
         sCalenderCellTwentyNine.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellTwentyNineLayout = new javax.swing.GroupLayout(sCalenderCellTwentyNine);
-        sCalenderCellTwentyNine.setLayout(sCalenderCellTwentyNineLayout);
-        sCalenderCellTwentyNineLayout.setHorizontalGroup(
-            sCalenderCellTwentyNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellTwentyNineLayout.setVerticalGroup(
-            sCalenderCellTwentyNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellTwentyNine.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellTwentyNine);
 
         sCalenderCellThirty.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyLayout = new javax.swing.GroupLayout(sCalenderCellThirty);
-        sCalenderCellThirty.setLayout(sCalenderCellThirtyLayout);
-        sCalenderCellThirtyLayout.setHorizontalGroup(
-            sCalenderCellThirtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyLayout.setVerticalGroup(
-            sCalenderCellThirtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirty.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirty);
 
         sCalenderCellThirtyOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyOneLayout = new javax.swing.GroupLayout(sCalenderCellThirtyOne);
-        sCalenderCellThirtyOne.setLayout(sCalenderCellThirtyOneLayout);
-        sCalenderCellThirtyOneLayout.setHorizontalGroup(
-            sCalenderCellThirtyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyOneLayout.setVerticalGroup(
-            sCalenderCellThirtyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyOne.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyOne);
 
         sCalenderCellThirtyTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyTwoLayout = new javax.swing.GroupLayout(sCalenderCellThirtyTwo);
-        sCalenderCellThirtyTwo.setLayout(sCalenderCellThirtyTwoLayout);
-        sCalenderCellThirtyTwoLayout.setHorizontalGroup(
-            sCalenderCellThirtyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyTwoLayout.setVerticalGroup(
-            sCalenderCellThirtyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyTwo.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyTwo);
 
         sCalenderCellThirtyThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyThreeLayout = new javax.swing.GroupLayout(sCalenderCellThirtyThree);
-        sCalenderCellThirtyThree.setLayout(sCalenderCellThirtyThreeLayout);
-        sCalenderCellThirtyThreeLayout.setHorizontalGroup(
-            sCalenderCellThirtyThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyThreeLayout.setVerticalGroup(
-            sCalenderCellThirtyThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyThree.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyThree);
 
         sCalenderCellThirtyFour.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyFourLayout = new javax.swing.GroupLayout(sCalenderCellThirtyFour);
-        sCalenderCellThirtyFour.setLayout(sCalenderCellThirtyFourLayout);
-        sCalenderCellThirtyFourLayout.setHorizontalGroup(
-            sCalenderCellThirtyFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyFourLayout.setVerticalGroup(
-            sCalenderCellThirtyFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyFour.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyFour);
 
         sCalenderCellThirtyFive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyFiveLayout = new javax.swing.GroupLayout(sCalenderCellThirtyFive);
-        sCalenderCellThirtyFive.setLayout(sCalenderCellThirtyFiveLayout);
-        sCalenderCellThirtyFiveLayout.setHorizontalGroup(
-            sCalenderCellThirtyFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyFiveLayout.setVerticalGroup(
-            sCalenderCellThirtyFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyFive.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyFive);
 
         sCalenderCellThirtySix.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtySixLayout = new javax.swing.GroupLayout(sCalenderCellThirtySix);
-        sCalenderCellThirtySix.setLayout(sCalenderCellThirtySixLayout);
-        sCalenderCellThirtySixLayout.setHorizontalGroup(
-            sCalenderCellThirtySixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtySixLayout.setVerticalGroup(
-            sCalenderCellThirtySixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtySix.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtySix);
 
         sCalenderCellThirtySeven.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtySevenLayout = new javax.swing.GroupLayout(sCalenderCellThirtySeven);
-        sCalenderCellThirtySeven.setLayout(sCalenderCellThirtySevenLayout);
-        sCalenderCellThirtySevenLayout.setHorizontalGroup(
-            sCalenderCellThirtySevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtySevenLayout.setVerticalGroup(
-            sCalenderCellThirtySevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtySeven.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtySeven);
 
         sCalenderCellThirtyEight.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyEightLayout = new javax.swing.GroupLayout(sCalenderCellThirtyEight);
-        sCalenderCellThirtyEight.setLayout(sCalenderCellThirtyEightLayout);
-        sCalenderCellThirtyEightLayout.setHorizontalGroup(
-            sCalenderCellThirtyEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyEightLayout.setVerticalGroup(
-            sCalenderCellThirtyEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyEight.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyEight);
 
         sCalenderCellThirtyNine.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellThirtyNineLayout = new javax.swing.GroupLayout(sCalenderCellThirtyNine);
-        sCalenderCellThirtyNine.setLayout(sCalenderCellThirtyNineLayout);
-        sCalenderCellThirtyNineLayout.setHorizontalGroup(
-            sCalenderCellThirtyNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellThirtyNineLayout.setVerticalGroup(
-            sCalenderCellThirtyNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellThirtyNine.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellThirtyNine);
 
         sCalenderCellFourty.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFourtyLayout = new javax.swing.GroupLayout(sCalenderCellFourty);
-        sCalenderCellFourty.setLayout(sCalenderCellFourtyLayout);
-        sCalenderCellFourtyLayout.setHorizontalGroup(
-            sCalenderCellFourtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFourtyLayout.setVerticalGroup(
-            sCalenderCellFourtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFourty.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFourty);
 
         sCalenderCellFourtyOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFourtyOneLayout = new javax.swing.GroupLayout(sCalenderCellFourtyOne);
-        sCalenderCellFourtyOne.setLayout(sCalenderCellFourtyOneLayout);
-        sCalenderCellFourtyOneLayout.setHorizontalGroup(
-            sCalenderCellFourtyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFourtyOneLayout.setVerticalGroup(
-            sCalenderCellFourtyOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFourtyOne.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFourtyOne);
 
         sCalenderCellFourtyTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout sCalenderCellFourtyTwoLayout = new javax.swing.GroupLayout(sCalenderCellFourtyTwo);
-        sCalenderCellFourtyTwo.setLayout(sCalenderCellFourtyTwoLayout);
-        sCalenderCellFourtyTwoLayout.setHorizontalGroup(
-            sCalenderCellFourtyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 121, Short.MAX_VALUE)
-        );
-        sCalenderCellFourtyTwoLayout.setVerticalGroup(
-            sCalenderCellFourtyTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-
+        sCalenderCellFourtyTwo.setLayout(new java.awt.GridLayout(0, 1));
         scCalenderPane.add(sCalenderCellFourtyTwo);
 
         scMainPane.add(scCalenderPane, java.awt.BorderLayout.CENTER);
@@ -766,6 +405,22 @@ public class SCalender extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnApril;
+    private javax.swing.JButton btnAugust;
+    private javax.swing.JButton btnDecember;
+    private javax.swing.JButton btnFebruary;
+    private javax.swing.JButton btnJanuary;
+    private javax.swing.JButton btnJuly;
+    private javax.swing.JButton btnJune;
+    private javax.swing.JButton btnMarch;
+    private javax.swing.JButton btnMay;
+    private javax.swing.JButton btnNovember;
+    private javax.swing.JButton btnOctober;
+    private javax.swing.JButton btnSeptember;
+    private javax.swing.JComboBox cmbYear;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblSelectYear;
     private javax.swing.JPanel sCalenderCellEight;
     private javax.swing.JPanel sCalenderCellEighteen;
     private javax.swing.JPanel sCalenderCellEleven;
