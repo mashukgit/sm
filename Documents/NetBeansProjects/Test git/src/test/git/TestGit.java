@@ -18,6 +18,7 @@ public class TestGit {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Mashuk");
+        System.out.println("This modification is on the way");
     }
     
 }
