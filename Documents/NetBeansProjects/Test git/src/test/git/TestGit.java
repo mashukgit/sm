@@ -6,11 +6,20 @@
 
 package test.git;
 
+import de.java.example.PreviewDemo;
+import org.naanab.JPrintPreview.JPrintPreviewDemo;
+
 /**
  *
  * @author Mashuk
  */
 public class TestGit {
+
+    public TestGit() {
+        PreviewDemo dfd= new PreviewDemo();
+        dfd.setVisible(true);
+        
+    }
 
     /**
      * @param args the command line arguments
@@ -19,6 +28,7 @@ public class TestGit {
         // TODO code application logic here
         System.out.println("Mashuk");
         System.out.println("This modification is on the way");
+        new TestGit();
     }
     
 }
