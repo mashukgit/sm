@@ -44,10 +44,8 @@ public class DayFinder {
     }
 
     private int getDayNumber(int year, int month, int date) {
-        int dayNum = -1;
-        year = year - 1900;       
-        dayNum = (month + date + year + (year / 4)) % 7;
-        return dayNum;
+        year = year - 1900;
+        return ((month + date + year + (year / 4)) % 7);
     }
 
     public static void main(String[] args) {
